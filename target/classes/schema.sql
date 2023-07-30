@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS Vehicles;
+DROP TABLE IF EXISTS RegistryEntries;
+
+CREATE TABLE Users (
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Vehicles (
+    id INTEGER AUTO_INCREMENT  NOT NULL,
+    carMake VARCHAR(255) NOT NULL,
+    carModel VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE RegistryEntries (
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    personalNumber VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    licenceNumber VARCHAR(255) NOT NULL,
+    carMake VARCHAR(255) NOT NULL,
+    carModel VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
